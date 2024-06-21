@@ -1,0 +1,14 @@
+* About
+Thin bindings to the eON client (v2).
+** Documentation
+*** Readme
+The ~readme~ can be constructed via:
+#+begin_src bash
+./scripts/org_to_md.sh readme_src.org readme.md
+#+end_src
+*** Generate ~org~ to ~md~
+#+begin_src bash
+emacs --script ./scripts/clean_and_convert.el
+#+end_src
+* License
+MIT.
