@@ -1,5 +1,12 @@
 * About
 Thin bindings to the eON client (v2).
+** Build
+*** Conda
+We provide a ~conda~ environment.
+#+begin_src bash
+micromamba create -f environment.yml
+micromamba activate eongit
+#+end_src
 ** Documentation
 *** Readme
 The ~readme~ can be constructed via:
@@ -9,6 +16,15 @@ The ~readme~ can be constructed via:
 *** Generate ~org~ to ~md~
 #+begin_src bash
 emacs --script ./scripts/clean_and_convert.el
+#+end_src
+* Contributing
+*Do* run ~pre-commit~ before actually submitting pull requests!
+#+begin_src bash
+pipx run pre-commit run --all-files
+#+end_src
+For best results, consider installing the ~git~ hook as well.
+#+begin_src bash
+pipx run pre-commit install
 #+end_src
 * License
 MIT.
